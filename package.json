@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Open Source POS Application made by vasoft.net",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build --dist-dir build src/index.html",
+    "start": "tailwindcss-cli build src/tailwind.css -o src/tailwind-build.css && parcel src/index.html",
+    "build": "NODE_ENV=production tailwindcss-cli build src/tailwind.css -o src/tailwind-build.css && parcel build --dist-dir build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,6 +36,8 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "parcel": "^2.0.0-beta.2"
+    "parcel": "^2.0.0-beta.2",
+    "tailwindcss": "^2.0.4",
+    "tailwindcss-cli": "^0.1.2"
   }
 }

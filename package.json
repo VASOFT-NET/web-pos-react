@@ -2,8 +2,9 @@
   "name": "va-pos",
   "version": "1.0.0",
   "description": "Open Source POS Application made by vasoft.net",
-  "main": "index.js",
   "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build --dist-dir build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,17 @@
   "bugs": {
     "url": "https://github.com/VASOFT-NET/web-pos-react/issues"
   },
-  "homepage": "https://github.com/VASOFT-NET/web-pos-react#readme"
+  "homepage": "https://github.com/VASOFT-NET/web-pos-react#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "parcel": "^2.0.0-beta.2"
+  }
 }

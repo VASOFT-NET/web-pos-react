@@ -1,6 +1,6 @@
 .bubble {
-  width: 18px;
-  height: 18px;
+  width: 9px;
+  height: 9px;
   border-radius: 100%;
   margin: 12px;
   background-image: linear-gradient(
@@ -10,38 +10,38 @@
   );
   animation: bounce 1.5s 0.5s linear infinite;
 }
+
 .bubble.yellow {
   background-color: #feb60a;
+  animation-delay: 1.3s;
 }
 
 .bubble.red {
   background-color: #9c0000;
-  animation-delay: 0.1s;
+  animation-delay: 0.2s;
 }
 
 .bubble.blue {
   background-color: #00dbf9;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 .bubble.violet {
   background-color: #da00f7;
-  animation-delay: 0.3s;
+  animation-delay: 0.6s;
 }
 
 @keyframes bounce {
-  0%,
-  50%,
-  100% {
+  0% {
     transform: scale(1);
     filter: blur(0px);
   }
-  25% {
-    transform: scale(0.6);
-    filter: blur(1px);
+  50% {
+    transform: scale(2.5);
+    filter: blur(0.6px);
   }
-  75% {
-    filter: blur(1px);
-    transform: scale(1.4);
+  100% {
+    filter: blur(0px);
+    transform: scale(1);
   }
 }

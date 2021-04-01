@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Dashboard from "./pages/dashboard";
 import Loading from "./pages/loading";
 
 export default class App extends Component {
@@ -9,7 +10,11 @@ export default class App extends Component {
     };
   }
 
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 1000);
+  }
+
   render() {
-    return <>{this.state.loading ? <Loading /> : <h1>OK</h1>}</>;
+    return <>{this.state.loading ? <Loading /> : <Dashboard />}</>;
   }
 }

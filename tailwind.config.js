@@ -5,6 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+      },
+      colors: {
+        "brand-blue": "#25aae1",
+        "brand-red": "#ed4d3a",
       },
     },
   },
